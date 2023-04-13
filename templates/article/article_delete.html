@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>Delete Article</h1>
+<br/><br/>
+
+<h3>Delete: {{ article.title }}</h3>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <strong>Are you sure?</strong><br/>
+    <button class="btn btn-danger">Delete</button>
+</form>
+
+{% else %}
+    <h1> You are not allowed!!!!</h1>
+{% endif %}
+
+{% endblock content %}
