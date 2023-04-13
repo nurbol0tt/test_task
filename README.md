@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-7. Finaly you can start project
+7. Finally you can start project
 ```
 python manage.py runserver
 ```
