@@ -2,7 +2,7 @@
 
 1. First we need to copy the project
 ```
-https://github.com/nurbol0tt/test_task.git
+git clone https://github.com/nurbol0tt/test_task.git
 ```
 
 
